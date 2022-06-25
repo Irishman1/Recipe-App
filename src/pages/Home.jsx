@@ -1,18 +1,14 @@
+import Random from "../components/Random";
 import Veggie from "../components/Veggie";
-import Popular from "../components/Popular";
+import { motion } from "framer-motion";
 
-
-
-
-import React from 'react'
-
-function Home() {
+const Home = () => {
   return (
-    <div>
-        <Veggie />
-        <Popular />
-    </div>
-  )
-}
+    <motion.div>
+      <Random />
+      <Veggie />
+    </motion.div>
+  );
+};
 
-export default Home
+export default Home;
